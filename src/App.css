@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.note-input {
+  outline: none;
+  background: none;
+  border: 1px solid #1A1A40;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: 300px;
+  color: #fff;
+}
+
+.note-input::placeholder {
+  color: #ffffff4d;
+}
+
+.note-btn {
+  background: #1A1A40;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.note {
+  width: calc(20% - 20px);
+  margin: 10px;
+  padding: 15px;
+  background: #1A1A40;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.note p {
+  background: #1A1A40;
+  color: #fff;
+  margin-bottom: 10px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.delete-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+@media screen and (max-width: 576px) { /* Extra small screens */
+  .note {
+    width: calc(100% - 20px);
+  }
+  .todo-input{
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 992px) { /* Small to medium screens */
+  .note {
+    width: calc(40% - 20px);
+  }
+}
+
+@media screen and (min-width: 992px) { /* Medium screens and above */
+  .note {
+    width: calc(20% - 20px);
+  }
+}
